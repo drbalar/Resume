@@ -1,0 +1,315 @@
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Deedy - One Page Two Column Resume
+  % LaTeX Template
+  % Version 1.1 (30/4/2014)
+  %
+  % Original author:
+  % Debarghya Das (http://debarghyadas.com)
+  %
+  % Original repository:
+  % https://github.com/deedydas/Deedy-Resume
+  %
+  % IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+  %
+  % This template uses several fonts not included with Windows/Linux by
+  % default. If you get compilation errors saying a font is missing, find the line
+  % on which the font is used and either change it to a font included with your
+  % operating system or comment the line out to use the default font.
+  % 
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % 
+  % TODO:
+  % 1. Integrate biber/bibtex for article citation under publications.
+  % 2. Figure out a smoother way for the document to flow onto the next page.
+  % 3. Add styling information for a "Projects/Hacks" section.
+  % 4. Add location/address information
+  % 5. Merge OpenFont and MacFonts as a single sty with options.
+  % 
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  % CHANGELOG:
+  % v1.1:
+  % 1. Fixed several compilation bugs with \renewcommand
+  % 2. Got Open-source fonts (Windows/Linux support)
+  % 3. Added Last Updated
+  % 4. Move Title styling into .sty
+  % 5. Commented .sty file.
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  % Known Issues:
+  % 1. Overflows onto second page if any column's contents are more than the
+  % vertical limit
+  % 2. Hacky space on the first bullet point on the second column.
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \documentclass[dvipsnames]{deedy-resume-openfont}
+  \usepackage{xcolor}
+
+  \begin{document}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %     LAST UPDATED DATE
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % \lastupdated
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %     TITLE NAME
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \namesection{Dhruvin}{\textcolor{BrickRed}{Balar}}{ \urlstyle{same}\url{github.com/drbalar} | Software Engineering 1B \\
+  \href{mailto:drbalar@edu.uwaterloo.ca}{drbalar@edu.uwaterloo.ca} | (647) 535-1291
+  }
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %     COLUMN ONE
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \begin{minipage}[t]{0.32\textwidth} 
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %     SKILLS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \section{Skills}
+  \subsection{Languages}
+  \bold{Proficiency:} Java \textbullet{} C \textbullet{} C++ \\
+  \bold{Experienced:} Python \textbullet{} Bash \textbullet{} \LaTeX\ \\
+  \subsection{Platforms}
+  Linux \textbullet{} Windows \textbullet{} Android \\
+  GitHub \textbullet{} GitLab \textbullet{} Arduino IDE \\
+  Eclipse \textbullet{} Intellij Idea \textbullet{} Greenfoot \textbullet{} Vim \\
+  Photoshop CC \textbullet{} MS Office \\
+  Cisco NetAcad \textbullet{} Google Chrome \\
+  
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   %     Programs
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%   \section{Programs}
+%   \subsection{Sprout Ideas Camp}
+%   Android App Development \\
+%   Graphics Design \\
+%   Marketing \& Pitching Ideas \\
+%   Taking on Global Issues with Technology
+%   \sectionsep{}
+%   \subsection{Helix Science Institute}
+%   Game Programming \\
+%   Theory of Games \\
+%   Data Abstraction \& Inheritance \\
+%   Utilization of Git for Team Collaboration \\
+%   \sectionsep
+    
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %     Volunteering
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \section{Volunteering} 
+
+  \begin{tabular}{rl}
+  2014-16   & Computer Repair \\
+  2014-15 	& Math Tutoring \\
+  \end{tabular}
+  \sectionsep
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %     EDUCATION
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \section{Education}
+  \subsection{University of Waterloo}
+  \descript{Candidate for Bachelor of Software Engineering}
+  \location{Expected May 2022}
+  \sectionsep
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %     PROJECTS Side
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \section{Projects}
+  \runsubsection{Asteroid Dodge}\\
+%   \descript{| Dec 2015-Jan 2015 \hfill Team size: $\bullet$}
+  \location{| Dec 2015 - Jan 2015 \hfill Team size: $\bullet$}
+%   \hfill\break
+%  \rule{\textwidth}{0.125pt}
+ \begin{tightz}
+  \item Used \bold{Eclipse} to code a 2D interactive game in \bold{Python}.
+  \item Forged a \bold{gyroscopic controller} from household materials.
+  \item Learned how to create a GUI and take input from a parallel port.
+  \end{tightz}
+  \sectionsep
+  
+  \runsubsection{Mario in Hyperspace}\\
+%   \descript{| Dec 2015-Jan 2015 \hfill Team size: $\bullet$}
+  \location{| Feb 2017 - Mar 2017 \hfill Team size: $\bullet \bullet \bullet$}
+ \begin{tightemize}
+  \item Used the \bold{Greenfoot environment} to code a complex 2D game in \bold{Java}.
+  \item Utilized \bold{object-oriented programming} to optimize code. 
+  \item Applied \bold{abstraction} to optimize the development of the project as a \bold{team}.
+  \end{tightemize}
+  \sectionsep
+  
+  \runsubsection{Android Car}\\
+  \location{| Oct 2017 - Dec 2017 \hfill Team size: $\bullet \bullet \bullet$}
+  \begin{tightemize}
+    \item Developed an \bold{Android app} to send data over a \bold{Bluetooth stream}.
+  	\item Used \bold{Arduino IDE} to code a program in \bold{C} to drive DC motors.
+    \item Added a camera to the car to construct a live video stream from the car to the phone.
+    \item Learned the basics of \bold{Android app development}.
+  \end{tightemize}
+  \sectionsep
+  
+  % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % %     LINKS
+  % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  % \section{Links} 
+  % Github:// \href{https://github.com/drbalar}{\custombold{drbalar}} \\
+  % LinkedIn://  \href{https://www.linkedin.com/in/dhruvin-balar-1a515398}{\custombold{dhruvin-balar-1a515398}} \\
+  % YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
+  % Twitter://  \href{https://twitter.com/debarghya_das}{\custombold{@debarghya\_das}} \\
+  % Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+  % \sectionsep
+  
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   %     EXTRA CURRICULARS
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%   \section{Extra Curriculars} 
+
+%   \begin{tabular}{rl}
+%   2014-2017   &  Math Team \\
+%   Spring 2016   &  Captain, Cricket Team \\
+%   Fall 2016   &  Tennis \\
+%   2013-2015   &  Swim Team \\
+%   \end{tabular}
+%   \sectionsep
+  
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   %     INTERESTS
+%   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%   \section{Interests} 
+%   Algorithms \\
+%   Exploring and learning new software \\
+%   Artificial Intelligence \\
+%   Scripting \\
+%   Photography \\
+%   Swimming \\
+%   Game of Thrones \\
+%   \sectionsep
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %     COLUMN TWO
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \end{minipage} 
+  \hfill
+  \begin{minipage}[t]{0.67\textwidth} 
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %     EXPERIENCE
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \section{Experience}
+
+  \runsubsection{First Robotics}
+  \descript{| Programming Team Leader}
+  \location{Sep 2016 – Jun 2017 | Toronto, ON}
+  \vspace{\topsep} % Hacky fix for awkward extra vertical space
+  \begin{tightemize}
+  \item Coded the robot's navigation algorithm in order to allow for high precision and smart acceleration of the robot initially in \bold{C++} but later on transitioned to \bold{Java}
+  \item \bold{Organized} team meetings and \bold{delivered} programming lessons to rookie as well as intermediate programmers.
+  \item Our team won the Rookie Award due to robust performance and team effort.
+  \end{tightemize}
+  \sectionsep
+
+  \runsubsection{Programming Team}
+  \descript{| Lead Programmer}
+  \location{Sep 2016 – June 2017 | Toronto, ON}
+  \begin{tightemize}
+  \item Filled in each other's holes in \bold{Java} and \bold{Python} to improve as a team
+  \item \bold{Organized} team building activities including interclub competitions.
+  \item \bold{Coordinated}/partook in official programming competitions.
+  \end{tightemize}
+  \sectionsep
+
+  \runsubsection{Northview Heights S.S.}
+  \descript{| Computer Services Technician}
+  \location{Sep 2015 – Jan 2016 | Toronto, ON}
+  \begin{tightemize}
+  \item Developed \bold{communication} and \bold{collaboration} skills with co-workers.
+  \item Dealt with issues that arose amongst the electronics in \bold{short time frames}.
+  \item Developed an \bold{Excel program} for students to sign the library log via scanning Student ID. This  helped keep a record of who's been in-and-out of the library.
+  \end{tightemize}
+  \sectionsep
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %     PROJECTS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ % \section{Projects}
+  \hfill\break
+  \runsubsection{Laser Tanks}
+  \location{| Oct 2017 - Nov 2017 \hfill Team size: $\bullet \bullet \bullet$}
+  \begin{tightemize}
+  	\item Worked with \bold{Arduino IDE} and \bold{GitLab} to collaboratively develop a software program in \bold{C} to control a homemade tank via \bold{Bluetooth}.
+    \item Programmed algorithms to allow \bold{4-way communication} amongst the tanks and controllers using Bluetooth and IR signals.
+    \item Applied knowledge of \bold{physics} and \bold{linear algebra} to create robust \bold{hand gesture} detection algorithms for controller input.
+    \item Gained teamwork skills and learned how to use GitLab for collaboration.
+  \end{tightemize}
+  \sectionsep
+
+  \runsubsection{Calendar Application}
+  \location{| Apr 2017 - Jun 2017 \hfill Team size: $\bullet \bullet \bullet$}
+  \begin{tightemize}
+  	\item Utilized \bold{IntelliJ Idea} to develop a graphical user-friendly calendar application in \bold{Java} for booking labs, laptops and tablets for use by teachers.
+    \item \bold{Smart selection algorithm} automatically chooses which form of technology is best for the teacher considering many factors. E.g., time, purpose...
+    \item \bold{Secure login system} ensures no-one can fake someone's identity.
+    \item Learned how to properly use \bold{data abstraction}, \bold{encapsulation} and \bold{inheritance} to improve the quality and efficiency of the code.
+  \end{tightemize}
+  \sectionsep
+  
+%   \runsubsection{Python Game}
+%   \descript{| Dec 2015-Jan 2015 \hfill Team size: $\bullet$}
+%   Used \bold{Python} to create a classical 2D game in \bold{Eclipse}. Created a \bold{gyroscopic controller} and an algorithm to read input from the tilt motions and execute actions in the game.
+%   \sectionsep
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %     TRAITS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \section{Traits} 
+  \begin{tabular}{rl}
+  \bold{Adaptable}  & Easily adapts to a team environment, as developed via collaborative projects.\\
+  \bold{Open-minded}& Open to suggestions and and views everything as a learning opportunity.\\
+  \bold{Organized}  & Good time management and task prioritization.\\
+    \bold{Social}	 & Great at communicating ideas or proposing resolutions to issues.\\
+
+  \end{tabular}
+  \sectionsep
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %     AWARDS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \section{Awards} 
+  \begin{tabular}{rl}
+  2017	     & University of Waterloo President’s Scholarship of Distinction \\
+  2016 \& 2017	 & Computer Science Award at Northview Heights S.S.\\
+  2014	     & Student Initiative Award at Northview Heights S.S.\\
+
+  \end{tabular}
+  \sectionsep
+
+  \end{minipage} 
+  \end{document}  \documentclass[]{article}
